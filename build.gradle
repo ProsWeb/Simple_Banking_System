@@ -7,7 +7,7 @@ version '1.0-SNAPSHOT'
 
 task fatJar(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'main.java.Main'
+        attributes 'Main-Class': 'banking.Main'
     }
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
