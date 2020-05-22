@@ -102,9 +102,9 @@ public class BankAccount {
         String receiverAccountWithoutLastDigit =
                 receiverAccount.substring(0, receiverAccount.length() - 1);
 
-        Checker checker = new Checker();
+        Checker checker = new Checker(receiverAccountWithoutLastDigit);
         int sumOfDigits =
-                checker.getSumOfDigits(receiverAccountWithoutLastDigit);
+                checker.getSumOfDigits();
 
         int lastDigit = Integer
                 .parseInt(receiverAccount.substring(receiverAccount.length() - 1));

@@ -52,8 +52,8 @@ public class Bank {
         String creditCardNumberWithoutCheckSum =
                 "" + identificationNumber + accountNumber;
 
-        Checker checker = new Checker();
-        int checkSum = checker.getCheckSum(creditCardNumberWithoutCheckSum);
+        Checker checker = new Checker(creditCardNumberWithoutCheckSum);
+        int checkSum = checker.getCheckSum();
 
         String creditCardNumber = creditCardNumberWithoutCheckSum + checkSum;
 
