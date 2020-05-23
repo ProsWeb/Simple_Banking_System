@@ -19,5 +19,5 @@ repositories {
 }
 
 dependencies {
-    compile group:'org.xerial', name:'sqlite-jdbc', version:'3.8.11.2'
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.31.1'
 }
